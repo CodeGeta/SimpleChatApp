@@ -1,0 +1,64 @@
+Course : Become a NodeJS Path Linkedin
+
+
+Section : Learning NodeJS
+	Module : Understanding npm
+		Chapter : Writing you own module
+			-	For utilizing a js file as module, specify the exports keyword for the corresponding variable or method 
+			-	Than inside the other module utilize the require keyword for accessing it
+			-	Example code 
+				F1 : exports.mytext = "hello" 
+				F2 : 
+					var mymodule = require('./F1')
+					console.log(mymodule.mytext)
+			-	You share the module by creating the object using export
+					
+		Chapter : Managing third party packages
+			-	Installed lodash library and accessed it, its kind of a math tool I suppose
+			-	if you use -g inside the installation to access it globally
+			-	Nodemon was used as the example no idea what it does as of now 
+			
+		Chapter : What is the package.json file
+			-	npm init when used will install package.json
+			- npm init --yes utilies the default package.json
+			
+	Module : Reading and writing files
+		Chapter : Reading for files
+			-	Heavy IO usually occurs in network and disk access
+			-	file system can be manipulated by requiring fs as module
+			-	the read operations specified inside the fs module usually have the second / third argument as the call back
+			-	This callback is executed asynchronously and may can be anonympu or regular function
+			-	However if a regular function is used as reference do not suffix Circular braces
+			-	There are is option of utilizing the file format if used as the second optional parameter
+			-	The second argument for json is the 'utf' standard
+			-	JSON object can be considere as modules itself and thus can be used by requiring to variable directly
+			-	var data = require('./data.json')
+			-	JSON file if accessed using fs will access it as a string and thus you will need to cast that using JSON.parse()
+			
+		Chapter : Accessing directiories
+			-	fs.readdir is used to read directories
+		
+		Chapter : Writing files
+			-	For fs.writeFile the structure follows file name, data, and a callbacke however still hazy about that
+		
+	Module : Exploring Web Frameworks
+		Chapter : NodeJS Framework
+			-	webapi is a service that allows you to get and save data to a server or back end
+			-	KOA, Express and sails are popular node framework
+		Chapter : Express Framework
+			-	A tried and tested framework
+			-	Used to create web api
+		Chapter : Socket.io
+			-	Socket io is used for bidirectinal comminication between frontend and backend
+			-	Realtime, bidirectional, even based communication
+			-	It is event driven
+	
+	Module : Building your demo application
+		Chapter : Static serving with express
+			-	Express can also be used to host pages wonder how the link to react is made
+			-	app.use can render the directory in which the index.html is available
+		Chapter : Create your browser app
+			-	
+	
+		
+		
