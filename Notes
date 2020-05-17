@@ -61,7 +61,14 @@ Section : Learning NodeJS
 			-	
 			
 		5. Chapter : Create a post message service
-			-	
-	
-		
+			-	body parser is required to understand messages sent as json inside express
+			-	app.use should be placed before the app.get or post as it creates issues
+		6. Chapter : Connect to Socket.io from browser app
+			-	For setting up socket we first require the http module and than pass it inside the require of socket.io as reference
+			-	For including the sockets and http both we need to make the server variable listen to http instead of app
+			-	the js on server is connected to the pertaining tag by the use of script tag
+			-	Well the socket is imported from servel by referencing src to the server and than a function called io() is called
+			-	This much is enough to notify the server that a connection is made
+			-	Server can than verify using on() method inside itself to assure connection and take necessary action
+		7. Chapter : Create your socket.io event
 		
